@@ -1,0 +1,100 @@
+/* --------- Mobile/Standard Styles ----------- */
+
+body {
+	background: url("../images/fields.jpg") no-repeat center center fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size:cover;
+	-o-background-size: cover;
+	position: relative;
+	height: 800px;
+	width: 100%;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	
+}
+
+#text-box {
+	width: 40%;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	 transform: translateY(-50%);
+	-webkit-transform: translateY(-0%);
+	-moz-transform: translateY(-50%);
+	-o-transform: translateY(-50%);	
+}
+
+#text-box h1 {
+	font-family: Oswald;
+	text-transform: uppercase;
+	font-size: 6em;
+	line-height: 1em;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#text-box p {
+	font-size: .9em;
+	font-weight: 600;
+
+}
+
+.button {
+	background-color: #D3FF09;
+	padding: 12px 50px;
+	margin-top: 20px;
+	display: inline-block; 
+	text-transform: uppercase;
+	color: #3E3F40;
+	font-size: .7em;
+	font-weight: bold;
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+}
+
+/* --------- Tablet Styles ----------- */
+@media (min-width: 768px) {
+
+#text-box {
+	width: 20%;
+}
+
+/* --------- Desktop Styles ----------- */
+@media (min-width: 1200px) {
+
+
+
+
+}
+
+
+
+
+/* --------- ClearFix ----------- */
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
